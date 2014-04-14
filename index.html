@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic Calculator</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header-row" class="row">
+		<div class="window-action" id="exit">&#215;</div>
+		<div class="window-action" id="minimize">&#8722;</div>
+		<div id="status"></div>
+	</div>
+	<div class="row">
+		<input type="text" id="display" />
+	</div>
+	<div class="row">
+		<div id="menu-button" data-action="info" class="action button wide colored2">Info</div>
+		<div id="clear-button" data-action="clear" class="action button wide colored2">Clear</div>
+	</div>
+	<div class="row">
+		<div id="7-button" data-number="7" class="number button">7</div>
+		<div id="8-button" data-number="8" class="number button">8</div>
+		<div id="9-button" data-number="9" class="number button">9</div>
+		<div id="addition-button" data-operator="+" class="operator button colored">&#43;</div>
+	</div>
+	<div class="row">
+		<div id="4-button" data-number="4" class="number button">4</div>
+		<div id="5-button" data-number="5" class="number button">5</div>
+		<div id="6-button" data-number="6" class="number button">6</div>
+		<div id="subtraction-button" data-operator="-" class="operator button colored">&#8722;</div>
+	</div>
+	<div class="row">
+		<div id="1-button" data-number="1" class="number button">1</div>
+		<div id="2-button" data-number="2" class="number button">2</div>
+		<div id="3-button" data-number="3" class="number button">3</div>
+		<div id="multiplication-button" data-operator="*" class="operator button colored">&#215;</div>
+	</div>
+	<div class="row">
+		<div id="decimal-button" data-number="." class="number button">&#1632;</div>
+		<div id="0-button" data-number="0" class="number button">0</div>
+		<div id="equal-button" data-operator="=" class="operator button">&#61;</div>
+		<div id="division-button" data-operator="/" class="operator button colored">&#247;</div>
+	</div>
+	<div id="info-overlay">
+		<h1>Basic Calculator</h1>
+		<p>Created by <a href="http://brettclapper.com/" target="_blank">Brett Clapper</a></p>
+		<p><span id="dismiss-overlay">Dismiss</span></p>
+	</div>
+</div>
+
+<script src="jquery-1.11.0.min.js"></script>
+<script src="Calculator.js"></script>
+<script src="init.js"></script>
+
+</body>
+</html>
